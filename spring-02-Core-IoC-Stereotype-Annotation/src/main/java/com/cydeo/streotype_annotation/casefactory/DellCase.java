@@ -1,5 +1,8 @@
 package com.cydeo.streotype_annotation.casefactory;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class DellCase extends Case  {
 
     public DellCase() {
@@ -9,7 +12,6 @@ public class DellCase extends Case  {
 
 
     public void pressPowerButton() {
-
         System.out.println("Power button pressed");
     }
 }

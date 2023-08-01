@@ -8,6 +8,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class PC {
+    /*
+    PC directly couple DellCase
+    ??? if I change the monitor diğerleride etkileniyor-->tightly couple
+    bu istenmeyen durumdur. kolayca istediğimiz yerde değişiklik yapabilmeliyiz.
+     */
 
     private DellCase theCase;
     private AcerMonitor monitor;
