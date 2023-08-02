@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Getter
 @Setter
-//@AllArgsConstructor
+@AllArgsConstructor
 @Component
 public class Dimensions {
 
