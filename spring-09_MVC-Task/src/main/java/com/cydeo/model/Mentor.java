@@ -1,13 +1,16 @@
 package com.cydeo.model;
 
+import com.cydeo.enums.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+
 @Data
 @AllArgsConstructor
-public class Student {
+public class Mentor {
 
-    private int id;
     private String firstName;
     private String lastName;
+    private int age;
+    private Gender gender;
 
 }

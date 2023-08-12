@@ -9,10 +9,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
 @Controller
 public class StudentController {
-
     @RequestMapping("/welcome")
 public String homePage(Model model){
         model.addAttribute("name","Cydeo");
@@ -34,12 +32,11 @@ public String homePage(Model model){
         LocalDate dt = LocalDate.now();
         model.addAttribute("date",dt);
 
+            System.out.println("--------------");
+        // student object:
         Student student = new Student(123,"mike","smith");
         model.addAttribute("student",student);
 
-
-        //method Model interface
      return "student/welcome";
-}
-
+    }
 }
