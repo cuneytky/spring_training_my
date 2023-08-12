@@ -31,5 +31,4 @@ public class CydeoApplication {
 		commentService.printDbConfigData();// Comment service yeni method yazıp çağırdık.
 
 	}
-
 }

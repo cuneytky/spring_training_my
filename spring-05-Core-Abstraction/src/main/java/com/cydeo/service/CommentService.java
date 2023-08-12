@@ -31,7 +31,6 @@ public class CommentService {
         //save in the DB
         //sonraDB.2
         commentRepository.storeComment(comment);
-
         //send email
         commentNotificationProxy.sendComment(comment);
     }

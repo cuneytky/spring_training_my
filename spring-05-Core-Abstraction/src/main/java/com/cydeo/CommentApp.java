@@ -23,6 +23,5 @@ public class CommentApp { // burasının cm.cydeo altında olması onemli sprın
         Storing comment:Spring Framework
         Sending notification for comment:Spring Framework
          */
-
     }
 }
