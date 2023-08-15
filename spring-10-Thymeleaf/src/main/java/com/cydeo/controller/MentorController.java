@@ -31,6 +31,7 @@ public class MentorController {
 
 //        return "mentor/mentor-register";
         return "redirect:/mentor/register";
+       // return "mentor/mentor-confirmation";
     }
 
 
