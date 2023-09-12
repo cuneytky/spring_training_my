@@ -8,6 +8,7 @@ public class StudentController {
 
     @RequestMapping("/student")
     public String getStudentInfo(){
+
         return "student/welcome.html";
     }
 
