@@ -1,14 +1,24 @@
 package com.cydeo.entity;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import com.cydeo.enums.Gender;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
-@Entity  // 1-tablo otamatik oluşturdu
-public class Employee {
+import java.time.LocalDate;
 
-    @Id   // 2- Primary key tanıttık
-    private int id;
-    private String name;
-
+@Entity
+@Table(name = "employees")
+@NoArgsConstructor
+@AllArgsConstructor
+public class Employee extends BaseEntity{
+    private String firstName;
+    private String lastName;
+    private String email;
+    @Column(columnDefinition = "DATE")
+    private LocalDate hireDate;
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
+    private int salary;
 }
