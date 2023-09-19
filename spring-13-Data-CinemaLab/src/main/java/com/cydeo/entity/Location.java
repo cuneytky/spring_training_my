@@ -1,28 +1,25 @@
 package com.cydeo.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
+
+import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
+@Data
 @NoArgsConstructor
-@Getter @Setter
-public class Location {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Location extends BaseEntity {
+
     private String name;
-    private double latitude;
-    private double longitude;
+    private BigDecimal latitude;
+    private BigDecimal longitude;
+    private String postalCode;
     private String country;
-    private String city;
     private String state;
-    private String postal_code;
+    private String city;
     private String address;
 
-    @OneToMany
-    private List<Cinema> cinema;
 }
