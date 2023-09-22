@@ -1045,7 +1045,6 @@ VALUES (1, 'Berrie', 'Manueau', 'bmanueau0@dion.ne.jp', '2006-04-20', 'Sports', 
     ON CONFLICT DO NOTHING;
 
 
-
 INSERT INTO COURSES(NAME, CATEGORY, RATING, DESCRIPTION)
 VALUES('Rapid Spring Boot Application Development', 'Spring', 4,
        'Spring Boot gives all the power of the Spring Framework without all of the complexities');

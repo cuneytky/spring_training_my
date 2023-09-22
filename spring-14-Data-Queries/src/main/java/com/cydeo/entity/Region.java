@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "region_id")
+@Table(name = "regions")
 @NoArgsConstructor
 @Data
 public class Region extends BaseEntity{
