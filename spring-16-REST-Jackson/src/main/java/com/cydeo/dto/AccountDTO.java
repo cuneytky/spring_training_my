@@ -23,5 +23,4 @@ public class AccountDTO {
 
     @JsonBackReference  // This field is not going to be serialized
     private UserDTO user;
-
 }
