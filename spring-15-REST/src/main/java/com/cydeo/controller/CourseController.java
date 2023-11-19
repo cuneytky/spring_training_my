@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController //@Controller + @ResponseBody
+@RestController    //   @Controller + @ResponseBody
 @RequestMapping("/courses/api/v1")
 public class CourseController {
 
@@ -19,6 +19,7 @@ public class CourseController {
     }
 
     @GetMapping
+
     public List<CourseDTO> getAllCourses(){
 
         return courseService.getCourses();
@@ -26,6 +27,7 @@ public class CourseController {
 
     @GetMapping("{id}")
     public CourseDTO getCourseById(@PathVariable("id") long courseId){
+
         return courseService.getCourseById(courseId);
     }
 
@@ -45,6 +47,7 @@ public class CourseController {
     public void updateCourse(@PathVariable("id") long courseId,@RequestBody CourseDTO course){
         courseService.updateCourse(courseId,course);
     }
+
 
     @DeleteMapping("{id}")
     public void deleteCourseById(@PathVariable("id") long courseId){

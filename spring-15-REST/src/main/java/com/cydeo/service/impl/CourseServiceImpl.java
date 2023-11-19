@@ -51,10 +51,10 @@ public class CourseServiceImpl implements CourseService {
         Course course = mapperUtil.convert(courseDTO, new Course());
 
         courseRepository.findById(courseId).ifPresent(dbCourse -> {
-//            dbCourse.setName(course.getName());
-//            dbCourse.setCategory(course.getCategory());
-//            dbCourse.setDescription(course.getDescription());
-//            dbCourse.setRating(course.getRating());
+            dbCourse.setName(course.getName());
+            dbCourse.setCategory(course.getCategory());
+            dbCourse.setDescription(course.getDescription());
+            dbCourse.setRating(course.getRating());
 
             courseRepository.save(dbCourse);
         });
