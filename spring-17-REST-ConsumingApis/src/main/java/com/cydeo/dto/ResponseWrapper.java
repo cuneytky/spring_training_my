@@ -14,18 +14,15 @@ public class ResponseWrapper {
     private String message;
     private Integer code;
     private Object data;
-
     public ResponseWrapper(String message, Object data){
         this.message = message;
         this.data=data;
         this.code= HttpStatus.OK.value();
         this.success=true;
     }
-
     public ResponseWrapper(String message){
         this.message=message;
         this.code=HttpStatus.OK.value();
         this.success=true;
     }
-
 }
